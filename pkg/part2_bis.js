@@ -201,6 +201,10 @@ function __wbg_adapter_20(arg0, arg1, arg2) {
     wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h6ff230b709c5271b(arg0, arg1, addHeapObject(arg2));
 }
 
+function __wbg_adapter_23(arg0, arg1, arg2) {
+    wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h74b4e8d424f43abf(arg0, arg1, addHeapObject(arg2));
+}
+
 let stack_pointer = 32;
 
 function addBorrowedObject(obj) {
@@ -208,16 +212,12 @@ function addBorrowedObject(obj) {
     heap[--stack_pointer] = obj;
     return stack_pointer;
 }
-function __wbg_adapter_23(arg0, arg1, arg2) {
+function __wbg_adapter_26(arg0, arg1, arg2) {
     try {
         wasm._dyn_core__ops__function__FnMut___A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h2afddee4c5a18a38(arg0, arg1, addBorrowedObject(arg2));
     } finally {
         heap[stack_pointer++] = undefined;
     }
-}
-
-function __wbg_adapter_26(arg0, arg1, arg2) {
-    wasm._dyn_core__ops__function__FnMut__A____Output___R_as_wasm_bindgen__closure__WasmClosure___describe__invoke__h74b4e8d424f43abf(arg0, arg1, addHeapObject(arg2));
 }
 
 /**
@@ -655,12 +655,12 @@ async function init(input) {
         var ret = makeMutClosure(arg0, arg1, 205, __wbg_adapter_20);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper274 = function(arg0, arg1, arg2) {
-        var ret = makeMutClosure(arg0, arg1, 124, __wbg_adapter_26);
+    imports.wbg.__wbindgen_closure_wrapper393 = function(arg0, arg1, arg2) {
+        var ret = makeMutClosure(arg0, arg1, 153, __wbg_adapter_26);
         return addHeapObject(ret);
     };
-    imports.wbg.__wbindgen_closure_wrapper393 = function(arg0, arg1, arg2) {
-        var ret = makeMutClosure(arg0, arg1, 153, __wbg_adapter_23);
+    imports.wbg.__wbindgen_closure_wrapper274 = function(arg0, arg1, arg2) {
+        var ret = makeMutClosure(arg0, arg1, 124, __wbg_adapter_23);
         return addHeapObject(ret);
     };
 
